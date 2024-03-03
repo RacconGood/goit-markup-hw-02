@@ -90,7 +90,7 @@ a {
 }
 
 .main-button {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   background: #4d5ae5;
   font-weight: 500;
