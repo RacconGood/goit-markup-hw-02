@@ -33,7 +33,7 @@ a {
 }
 
 .nav-logo span {
-  color:  #2e2f42;
+  color: #2e2f42;
 }
 
 .nav-list {
@@ -74,7 +74,8 @@ a {
 
 /*?====================MAIN======================*/
 
-.main { text-align: center;
+.main {
+  text-align: center;
 }
 
 .main-sect {
@@ -133,7 +134,7 @@ a {
 
 .ourteam-main {
   text-align: center;
-  background-color: #F4F4FD;
+  background-color: #f4f4fd;
 }
 .ourteam {
   text-transform: capitalize;
