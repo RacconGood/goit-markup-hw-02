@@ -1,12 +1,44 @@
+
 ul {
+  list-style: none;
   list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.cont{
+  width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 .header {
   color: #4d5ae5;
+  
 }
 .body {
   font-family: "Roboto", sans-serif;
@@ -15,13 +47,22 @@ a {
 }
 /*?======================NAV===============*/
 .nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
 }
-
+.header-cont{
+  display: flex;
+  text-align: center;
+}
 .address {
   font-style: normal;
 }
 
 .nav-logo {
+  
+  margin-left: 124px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -37,11 +78,18 @@ a {
 }
 
 .nav-list {
+  align-items: center;
+  margin-left: 76px;
+  display: flex;
 }
 .nav-item {
+  margin-left: 40px ;
+  display: flex;
 }
 
 .nav-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -63,8 +111,14 @@ a {
   font-style: normal;
 }
 .contact-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-left: 332px;
+  text-align: center;
+  display: flex;
 }
 .contact-item {
+  margin-left: 40px;
 }
 
 .contact-link:hover,
@@ -83,14 +137,23 @@ a {
 }
 
 .main-text {
+  
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
 }
+.main-text-cont{
+  padding-top: 188px;
+  width: 496px;
+height: 120px;
+}
 
 .main-button {
+  margin-left: 636px;
+  margin-top: 48px;
+  margin-bottom: 188px;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   background: #4d5ae5;
@@ -99,6 +162,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  text-align: center;
 }
 .main-button:hover,
 .main-button:focus {
