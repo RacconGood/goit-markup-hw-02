@@ -31,7 +31,7 @@ p {
   margin-top: 0;
 }
 .cont{
-  width: 1440px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -57,12 +57,15 @@ p {
   text-align: center;
 }
 .address {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
   font-style: normal;
+  justify-content: flex-end;
 }
 
 .nav-logo {
-  
-  margin-left: 124px;
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -78,18 +81,15 @@ p {
 }
 
 .nav-list {
-  align-items: center;
-  margin-left: 76px;
+  gap: 40px;
   display: flex;
 }
 .nav-item {
-  margin-left: 40px ;
   display: flex;
 }
 
 .nav-link {
   display: flex;
-  align-items: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -111,14 +111,14 @@ p {
   font-style: normal;
 }
 .contact-list {
+  gap: 108px;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-left: 332px;
   text-align: center;
+  align-items: center;
   display: flex;
 }
 .contact-item {
-  margin-left: 40px;
 }
 
 .contact-link:hover,
@@ -130,6 +130,7 @@ p {
 
 .main {
   text-align: center;
+  align-items: center;
 }
 
 .main-sect {
@@ -137,23 +138,24 @@ p {
 }
 
 .main-text {
-  
+  margin: 0 auto;
+  max-width: 496px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
 }
-.main-text-cont{
+.main-text-cont{ 
   padding-top: 188px;
-  width: 496px;
-height: 120px;
+  padding-bottom: 188px;
 }
 
 .main-button {
-  margin-left: 636px;
   margin-top: 48px;
-  margin-bottom: 188px;
+  border-radius: 4px;
+  width: 169px;
+height: 56px;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   background: #4d5ae5;
@@ -170,13 +172,22 @@ height: 120px;
 }
 
 /*====================Headline======================*/
+.headline-cont{
+  padding-top: 120px;
+  padding-bottom: 120px;
+ 
+}
 .headline {
 }
 
 .headline-list {
+  display: flex;
+  text-align: center;
+  gap: 24px;
 }
 
 .headline-item {
+  width: calc((100% -24px * 3) / 4);
 }
 
 .headline-subtitle {
@@ -185,6 +196,8 @@ height: 120px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  display: flex;
+  text-align: left;
 }
 
 .headline-item-text {
@@ -192,6 +205,9 @@ height: 120px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: flex;
+  text-align: left;
+  margin-top: 8px;
 }
 
 /*====================OurTeam======================*/
@@ -208,8 +224,16 @@ height: 120px;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.ourteam-cont{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .ourteam-list {
+  margin-top: 72px;
+  display: flex;
+  text-align: center;
+  gap: 24px;
 }
 
 .ourteam-item {
@@ -226,6 +250,7 @@ height: 120px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
 }
 
 .ourteam-item-text {
@@ -234,12 +259,15 @@ height: 120px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-bottom: 32px;
 }
 
 /*====================Footer======================*/
 
 .footer {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -254,8 +282,13 @@ height: 120px;
 .foo-logo {
   color: #f4f4fd;
 }
+.cont-footer{
+  text-align: left;
+}
 
 .footer-text {
+  width: 264px;
+  margin-top: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -263,6 +296,10 @@ height: 120px;
   color: #f4f4fd;
 }
 .ourportfolio {
+}
+.ourportfolio-cont{
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .ourportfolio-title {
   text-transform: capitalize;
@@ -273,13 +310,28 @@ height: 120px;
   color: #2e2f42;
 }
 .ourportfolio-list {
+  margin-top: 72px;
+  display: flex;
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  
 }
 .ourportfolio-item {
+  width: calc((100% - 24px * 2) / 3);
+
 }
 .ourportfolio-img {
 }
 .ourportfolio-img-link {
 }
+
+.ourportfolio-cont-two{
+  text-align: left;
+  padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  }
+
 .ourportfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -287,7 +339,9 @@ height: 120px;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .ourportfolio-item-text {
+  margin-top: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
